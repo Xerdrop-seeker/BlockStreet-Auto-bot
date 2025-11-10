@@ -1,0 +1,19 @@
+{
+  "name": "blockstreet-bot",
+  "version": "1.0.0",
+  "description": "BlockStreet automation bot",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "dev": "node main.js"
+  },
+  "dependencies": {
+    "ethers": "^6.13.5",
+    "axios": "^1.7.9",
+    "https-proxy-agent": "^7.0.5",
+    "dotenv": "^16.4.7"
+  },
+  "keywords": ["blockstreet", "crypto", "automation"],
+  "author": "papi",
+  "license": "MIT"
+}
