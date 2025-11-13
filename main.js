@@ -271,7 +271,7 @@ class BlockStreetAPI {
 
             if (useCustom) {
                 // Dynamically generate sign message
-                nonce = Math.random().toString(36).slice(2, 10); // Random nonce
+                nonce = Math.random().toString(36).slice(2, 10); 
                 messageToSign = `blockstreet.money wants you to sign in with your Ethereum account:\n${this.wallet.address}\n\nWelcome to Block Street\n\nURI: https://blockstreet.money\nVersion: 1\nChain ID: 1\nNonce: ${nonce}\nIssued At: ${issuedAt}\nExpiration Time: ${expirationTime}`;
             } else {
                 const signnonce = await this.#sendRequest({ url: '/account/signnonce', method: 'GET' }, false);
@@ -597,4 +597,5 @@ for (const wallet of wallets) {
 main().catch(err => {
     logger.error('A critical error occurred: ' + err.message);
     closeRl();
+
 });
