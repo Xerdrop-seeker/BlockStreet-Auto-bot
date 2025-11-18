@@ -270,7 +270,7 @@ class BlockStreetAPI {
             let expirationTime = new Date(Date.now() + 2 * 60 * 1000).toISOString();
 
             if (useCustom) {
-                // Dynamically generate sign message
+                // Dynamically generate sign messag
                 nonce = Math.random().toString(36).slice(2, 10); 
                 messageToSign = `blockstreet.money wants you to sign in with your Ethereum account:\n${this.wallet.address}\n\nWelcome to Block Street\n\nURI: https://blockstreet.money\nVersion: 1\nChain ID: 1\nNonce: ${nonce}\nIssued At: ${issuedAt}\nExpiration Time: ${expirationTime}`;
             } else {
@@ -599,3 +599,4 @@ main().catch(err => {
     closeRl();
 
 });
+
