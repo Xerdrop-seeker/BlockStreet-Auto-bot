@@ -26,7 +26,7 @@ const logger = {
     banner: () => {
         console.log(`${colors.cyan}${colors.bold}`);
         console.log(`----------------------------------------`);
-        console.log(`           BlockStreet Bot V2   `);
+        console.log(`           BlockStreet Bot V2.1   `);
         console.log(`----------------------------------------${colors.reset}`);
         console.log();
     }
@@ -599,4 +599,5 @@ main().catch(err => {
     closeRl();
 
 });
+
 
